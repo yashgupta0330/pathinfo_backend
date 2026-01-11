@@ -1,0 +1,107 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jobs",
+  "info": {
+    "singularName": "job",
+    "pluralName": "jobs",
+    "displayName": "Job",
+    "description": "Job listings for careers page",
+    "mainField": "title"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "department": {
+      "type": "enumeration",
+      "enum": [
+        "Engineering",
+        "Marketing",
+        "Sales",
+        "HR",
+        "Finance",
+        "Operations",
+        "Design",
+        "Product",
+        "Customer Support",
+        "Other"
+      ],
+      "required": true
+    },
+    "role": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "jobType": {
+      "type": "enumeration",
+      "enum": ["Full-Time", "Part-Time", "Contract", "Internship", "Remote"],
+      "default": "Full-Time",
+      "required": true
+    },
+    "experienceLevel": {
+      "type": "enumeration",
+      "enum": ["Entry Level", "Mid Level", "Senior Level", "Lead", "Manager"],
+      "required": true
+    },
+    "salaryMin": {
+      "type": "decimal"
+    },
+    "salaryMax": {
+      "type": "decimal"
+    },
+    "salaryCurrency": {
+      "type": "enumeration",
+      "enum": ["USD", "EUR", "INR", "AUD", "JPY", "Other"]
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "responsibilities": {
+      "type": "richtext"
+    },
+    "requirements": {
+      "type": "richtext"
+    },
+    "benefits": {
+      "type": "richtext"
+    },
+    "postedDate": {
+      "type": "date",
+      "required": true
+    },
+    "expiryDate": {
+      "type": "date"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true,
+      "required": false
+    },
+    "applyEmail": {
+      "type": "email"
+    },
+    "applyUrl": {
+      "type": "string"
+    },
+    "job_applications": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::job-application.job-application",
+      "mappedBy": "job"
+    }
+  }
+}

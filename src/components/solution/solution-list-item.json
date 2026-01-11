@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_solution_list_items",
+  "info": {
+    "displayName": "solution-list-item",
+    "icon": "list",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "metrics": {
+      "type": "component",
+      "repeatable": true,
+      "component": "solution.metric-item"
+    }
+  }
+}

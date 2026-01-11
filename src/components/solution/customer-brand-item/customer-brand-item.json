@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_customer_brand_items",
+  "info": {
+    "displayName": "Customer Brand Item",
+    "icon": "store",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "brandName": {
+      "type": "string"
+    },
+    "brandLogo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

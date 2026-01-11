@@ -1,0 +1,384 @@
+{
+  "settings": {
+    "bulkable": true,
+    "filterable": true,
+    "searchable": true,
+    "pageSize": 10,
+    "mainField": "email",
+    "defaultSortBy": "appliedAt",
+    "defaultSortOrder": "DESC"
+  },
+  "metadatas": {
+    "id": {
+      "edit": {},
+      "list": {
+        "label": "ID",
+        "searchable": false,
+        "sortable": true
+      }
+    },
+    "firstName": {
+      "edit": {
+        "label": "First Name",
+        "description": "",
+        "placeholder": "",
+        "visible": true,
+        "editable": true
+      },
+      "list": {
+        "label": "First Name",
+        "searchable": true,
+        "sortable": true
+      }
+    },
+    "lastName": {
+      "edit": {
+        "label": "Last Name",
+        "description": "",
+        "placeholder": "",
+        "visible": true,
+        "editable": true
+      },
+      "list": {
+        "label": "Last Name",
+        "searchable": true,
+        "sortable": true
+      }
+    },
+    "email": {
+      "edit": {
+        "label": "Email",
+        "description": "",
+        "placeholder": "",
+        "visible": true,
+        "editable": true
+      },
+      "list": {
+        "label": "Email",
+        "searchable": true,
+        "sortable": true
+      }
+    },
+    "phone": {
+      "edit": {
+        "label": "Phone",
+        "description": "",
+        "placeholder": "",
+        "visible": true,
+        "editable": true
+      },
+      "list": {
+        "label": "Phone",
+        "searchable": true,
+        "sortable": true
+      }
+    },
+    "job": {
+      "edit": {
+        "label": "Job",
+        "description": "",
+        "placeholder": "",
+        "visible": true,
+        "editable": true,
+        "mainField": "title"
+      },
+      "list": {
+        "label": "Job",
+        "searchable": true,
+        "sortable": true,
+        "mainField": "title"
+      }
+    },
+    "resume": {
+      "edit": {
+        "label": "Resume",
+        "description": "",
+        "placeholder": "",
+        "visible": true,
+        "editable": true
+      },
+      "list": {
+        "label": "Resume",
+        "searchable": false,
+        "sortable": false
+      }
+    },
+    "applicationStatus": {
+      "edit": {
+        "label": "Application Status",
+        "description": "",
+        "placeholder": "",
+        "visible": true,
+        "editable": true
+      },
+      "list": {
+        "label": "Status",
+        "searchable": true,
+        "sortable": true
+      }
+    },
+    "appliedAt": {
+      "edit": {
+        "label": "Applied At",
+        "description": "",
+        "placeholder": "",
+        "visible": true,
+        "editable": true
+      },
+      "list": {
+        "label": "Applied At",
+        "searchable": false,
+        "sortable": true
+      }
+    },
+    "yearsOfExperience": {
+      "edit": {
+        "label": "Years of Experience",
+        "description": "",
+        "placeholder": "",
+        "visible": true,
+        "editable": true
+      },
+      "list": {
+        "label": "Experience",
+        "searchable": true,
+        "sortable": true
+      }
+    },
+    "currentLocation": {
+      "edit": {
+        "label": "Current Location",
+        "description": "",
+        "placeholder": "",
+        "visible": true,
+        "editable": true
+      },
+      "list": {
+        "label": "Location",
+        "searchable": true,
+        "sortable": true
+      }
+    },
+    "coverLetter": {
+      "edit": {
+        "label": "Cover Letter",
+        "description": "",
+        "placeholder": "",
+        "visible": true,
+        "editable": true
+      },
+      "list": {
+        "label": "Cover Letter",
+        "searchable": false,
+        "sortable": false
+      }
+    },
+    "linkedinUrl": {
+      "edit": {
+        "label": "LinkedIn URL",
+        "description": "",
+        "placeholder": "",
+        "visible": true,
+        "editable": true
+      },
+      "list": {
+        "label": "LinkedIn",
+        "searchable": false,
+        "sortable": false
+      }
+    },
+    "portfolioUrl": {
+      "edit": {
+        "label": "Portfolio URL",
+        "description": "",
+        "placeholder": "",
+        "visible": true,
+        "editable": true
+      },
+      "list": {
+        "label": "Portfolio",
+        "searchable": false,
+        "sortable": false
+      }
+    },
+    "expectedSalary": {
+      "edit": {
+        "label": "Expected Salary",
+        "description": "",
+        "placeholder": "",
+        "visible": true,
+        "editable": true
+      },
+      "list": {
+        "label": "Expected Salary",
+        "searchable": false,
+        "sortable": true
+      }
+    },
+    "noticePeriod": {
+      "edit": {
+        "label": "Notice Period",
+        "description": "",
+        "placeholder": "",
+        "visible": true,
+        "editable": true
+      },
+      "list": {
+        "label": "Notice Period",
+        "searchable": false,
+        "sortable": false
+      }
+    },
+    "skills": {
+      "edit": {
+        "label": "Skills",
+        "description": "Candidate's skills (comma-separated)",
+        "placeholder": "",
+        "visible": true,
+        "editable": true
+      },
+      "list": {
+        "label": "Skills",
+        "searchable": true,
+        "sortable": false
+      }
+    },
+    "notes": {
+      "edit": {
+        "label": "Notes",
+        "description": "Internal notes for HR",
+        "placeholder": "",
+        "visible": true,
+        "editable": true
+      },
+      "list": {
+        "label": "Notes",
+        "searchable": false,
+        "sortable": false
+      }
+    },
+    "createdAt": {
+      "edit": {
+        "label": "Created At",
+        "description": "",
+        "placeholder": "",
+        "visible": false,
+        "editable": true
+      },
+      "list": {
+        "label": "Created At",
+        "searchable": false,
+        "sortable": true
+      }
+    },
+    "updatedAt": {
+      "edit": {
+        "label": "Updated At",
+        "description": "",
+        "placeholder": "",
+        "visible": false,
+        "editable": true
+      },
+      "list": {
+        "label": "Updated At",
+        "searchable": false,
+        "sortable": true
+      }
+    }
+  },
+  "layouts": {
+    "list": ["id", "firstName", "lastName", "email", "job", "applicationStatus", "appliedAt"],
+    "edit": [
+      [
+        {
+          "name": "firstName",
+          "size": 6
+        },
+        {
+          "name": "lastName",
+          "size": 6
+        }
+      ],
+      [
+        {
+          "name": "email",
+          "size": 6
+        },
+        {
+          "name": "phone",
+          "size": 6
+        }
+      ],
+      [
+        {
+          "name": "job",
+          "size": 6
+        },
+        {
+          "name": "applicationStatus",
+          "size": 6
+        }
+      ],
+      [
+        {
+          "name": "resume",
+          "size": 12
+        }
+      ],
+      [
+        {
+          "name": "yearsOfExperience",
+          "size": 6
+        },
+        {
+          "name": "currentLocation",
+          "size": 6
+        }
+      ],
+      [
+        {
+          "name": "expectedSalary",
+          "size": 6
+        },
+        {
+          "name": "noticePeriod",
+          "size": 6
+        }
+      ],
+      [
+        {
+          "name": "linkedinUrl",
+          "size": 6
+        },
+        {
+          "name": "portfolioUrl",
+          "size": 6
+        }
+      ],
+      [
+        {
+          "name": "skills",
+          "size": 12
+        }
+      ],
+      [
+        {
+          "name": "coverLetter",
+          "size": 12
+        }
+      ],
+      [
+        {
+          "name": "notes",
+          "size": 12
+        }
+      ],
+      [
+        {
+          "name": "appliedAt",
+          "size": 12
+        }
+      ]
+    ]
+  }
+}

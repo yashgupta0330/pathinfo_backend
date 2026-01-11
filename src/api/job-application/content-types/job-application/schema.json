@@ -1,0 +1,88 @@
+{
+  "kind": "collectionType",
+  "collectionName": "job_applications",
+  "info": {
+    "singularName": "job-application",
+    "pluralName": "job-applications",
+    "displayName": "Job Application",
+    "description": "Applications submitted by candidates for job positions"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstName": {
+      "type": "string",
+      "required": true
+    },
+    "lastName": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "phone": {
+      "type": "string",
+      "required": true
+    },
+    "resume": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["files"]
+    },
+    "coverLetter": {
+      "type": "text"
+    },
+    "linkedinUrl": {
+      "type": "string"
+    },
+    "portfolioUrl": {
+      "type": "string"
+    },
+    "yearsOfExperience": {
+      "type": "integer"
+    },
+    "currentLocation": {
+      "type": "string"
+    },
+    "expectedSalary": {
+      "type": "decimal"
+    },
+    "noticePeriod": {
+      "type": "string"
+    },
+    "skills": {
+      "type": "text"
+    },
+    "applicationStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Submitted",
+        "Under Review",
+        "Shortlisted",
+        "Interview Scheduled",
+        "Rejected",
+        "Hired"
+      ],
+      "default": "Submitted",
+      "required": true
+    },
+    "appliedAt": {
+      "type": "datetime",
+      "required": true
+    },
+    "job": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::job.job",
+      "inversedBy": "job_applications"
+    },
+    "notes": {
+      "type": "text"
+    }
+  }
+}

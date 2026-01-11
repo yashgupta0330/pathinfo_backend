@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "global_setting",
+  "info": {
+    "singularName": "global-setting",
+    "pluralName": "global-settings",
+    "displayName": "Global Settings",
+    "description": "Global website settings and configurations"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "globalContactForm": {
+      "type": "component",
+      "component": "contact.global-contact-form",
+      "repeatable": false,
+      "required": false
+    }
+  }
+}

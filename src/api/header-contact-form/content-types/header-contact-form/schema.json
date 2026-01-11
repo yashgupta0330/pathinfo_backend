@@ -1,0 +1,41 @@
+{
+  "kind": "singleType",
+  "collectionName": "header_contact_form",
+  "info": {
+    "singularName": "header-contact-form",
+    "pluralName": "header-contact-forms",
+    "displayName": "Header Contact Form",
+    "description": "Contact form configuration for the header"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Contact Us"
+    },
+    "description": {
+      "type": "text"
+    },
+    "submitButtonText": {
+      "type": "string",
+      "default": "SEND MESSAGE"
+    },
+    "successMessage": {
+      "type": "text",
+      "default": "Thank you for contacting us! We will get back to you soon."
+    },
+    "errorMessage": {
+      "type": "text",
+      "default": "Something went wrong. Please try again."
+    },
+    "formFields": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::contactformfield.contactformfield"
+    }
+  }
+}

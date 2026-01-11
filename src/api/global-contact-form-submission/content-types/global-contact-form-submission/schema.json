@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "global_contact_form_submissions",
+  "info": {
+    "singularName": "global-contact-form-submission",
+    "pluralName": "global-contact-form-submissions",
+    "displayName": "Global Contact Form Submission",
+    "description": "Stores submissions from the global contact form"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "formData": {
+      "type": "json",
+      "required": true
+    },
+    "submittedAt": {
+      "type": "datetime",
+      "default": null
+    },
+    "ipAddress": {
+      "type": "string"
+    },
+    "userAgent": {
+      "type": "text"
+    }
+  }
+}

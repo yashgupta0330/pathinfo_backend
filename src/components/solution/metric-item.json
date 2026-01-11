@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_metric_items",
+  "info": {
+    "displayName": "Metric Item",
+    "icon": "check",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

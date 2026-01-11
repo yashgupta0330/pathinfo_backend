@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_contact_global_contact_forms",
+  "info": {
+    "displayName": "Global Contact Form",
+    "description": "Contact form configuration for global use"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Contact Us"
+    },
+    "description": {
+      "type": "text"
+    },
+    "submitButtonText": {
+      "type": "string",
+      "default": "Submit"
+    },
+    "formFields": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contact.contact-form-field"
+    }
+  }
+}

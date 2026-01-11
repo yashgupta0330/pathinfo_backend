@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_form_fields",
+  "info": {
+    "singularName": "contactformfield",
+    "pluralName": "contactformfields",
+    "displayName": "Contact Form Field"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": ["text", "email", "select", "textarea", "checkbox", "number", "tel"],
+      "default": "text"
+    },
+    "required": {
+      "type": "boolean",
+      "default": false
+    },
+    "options": {
+      "type": "json",
+      "default": null
+    },
+    "placeholder": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "helpText": {
+      "type": "string"
+    }
+  }
+}

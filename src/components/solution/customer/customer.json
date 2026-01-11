@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_customers",
+  "info": {
+    "displayName": "Customer",
+    "icon": "user",
+    "description": "Key customer logo and name"
+  },
+  "options": {},
+  "attributes": {
+    "customerName": {
+      "type": "string"
+    },
+    "customerLogo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}
